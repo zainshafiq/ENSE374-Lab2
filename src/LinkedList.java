@@ -38,7 +38,11 @@ public class LinkedList {
 		tail = null;
 	}
 	
-	
+	• Add a node public void addElement(ListElement le)
+	• Retrieve a node public ListElement getElement(int index)
+	• Delete a node public ListElement deleteElement(int index)
+	• Print the linked list from the tail public void printLinkedListTail()
+	• Print the linked list from the head public void printLinkedListHead()
 	
 	public void addElement(ListElement le) 
 	{

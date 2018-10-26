@@ -16,4 +16,148 @@
  * Shafiq Zainuddin - 200342741
  */
 
+public class LinkedList {
+	
+	//Declaring variables
+	public ListElement head;
+	public ListElement tail;
+	public int sizeIndex;
+	
+	//Default constructor
+	public LinkedList( )
+	{
+		/*
+   	  	* Initializing variables;
+   	  	* 
+   	  	* Initialize sizeIndex to 0
+   	  	* Initialize head to NULL
+   	  	* Initialize tail to NULL
+   	  	*/
+		sizeIndex = 0;
+		head = null;
+		tail = null;
+	}
+	
+	 public void addElement(ListElement le) 
+	 {
+		ListElement temp = new ListElement();
+		le.setData(5);
+		temp.setNext(head);
+		 
+		if(head != null)
+		{
+			tail.setPrevious(temp);
+		}
+		
+		head = temp;
+
+		if(tail == null)
+		{
+			tail = temp;
+		}
+		
+       sizeIndex++;
+    }
+
+	public ListElement getElement(int index)
+	{
+		if (index < 0 || index >= sizeIndex)
+		{
+			System.out.println("Something");
+		}
+		
+        else
+        {
+        	ListElement node = head;         
+
+            for(int i = 1; i < index; i++)
+            {	
+            	node = node.getNext();
+            }
+            
+            return node;
+        }
+		return null;
+	}   
+
+    public ListElement deleteElement(int index)
+    {
+    	if (index < 0 || index >= sizeIndex)
+    	{	
+    		System.out.println("Something");
+    	}
+    	
+        else
+        {  
+            if(index == 0)
+            {
+                ListElement curr = head;
+                head = head.getNext();
+
+                if(head != null)
+                {
+                	head.setPrevious(null);
+                }
+                
+                sizeIndex--;
+                
+                return curr;
+            }
+
+            ListElement node = head;
+
+            for(int i = 1; i < index; i++)
+            {
+            	node = node.getNext();
+            }
+           
+            ListElement curr = node.getNext();
+
+            node.setNext(node.getNext().getNext());
+
+            if(node.getNext() != null)
+            {
+            	node.getNext().setPrevious(node);
+            }
+            
+            sizeIndex--;
+            
+            return curr;
+        }
+		return null;
+    }
+
+   
+    public void printLinkedListHead()
+    {
+    	ListElement node = head;
+
+    	while(node != null)
+    	{
+    		System.out.print(node.getData() + " ");
+    		node = node.getNext();
+    	}
+
+    	System.out.println();
+    }
+
+    public void printLinkedListTail()
+    {
+    	ListElement node = tail;
+
+    	while(node != null)
+    	{
+    		System.out.print(node.getData() + " ");
+    		node = node.getPrevious();
+    	}
+
+    	System.out.println();
+    }
+}
+	
+
+	
+	
+	
+
 

@@ -9,14 +9,14 @@
 public class ListElement
 {
 	/*
-	 * Declaring private variables
+	 * Declaring variables
 	 */
 	
      private ListElement next;
      private ListElement previous;
      private int data;
      
-     public ListElement( )
+     public ListElement()
      {
     	 /*
     	  * Initializing variables;

@@ -37,13 +37,8 @@ public class LinkedList {
 		head = null;
 		tail = null;
 	}
-	
-	• Add a node public void addElement(ListElement le)
-	• Retrieve a node public ListElement getElement(int index)
-	• Delete a node public ListElement deleteElement(int index)
-	• Print the linked list from the tail public void printLinkedListTail()
-	• Print the linked list from the head public void printLinkedListHead()
-	
+		
+	//Add a node public void addElement(ListElement le)
 	public void addElement(ListElement le) 
 	{
 		ListElement temp = new ListElement();
@@ -65,6 +60,7 @@ public class LinkedList {
        sizeIndex++;
     }
 
+	//Retrieve a node public ListElement getElement(int index)
 	public ListElement getElement(int index)
 	{
 		if (index < 0 || index >= sizeIndex)
@@ -86,6 +82,7 @@ public class LinkedList {
 		return null;
 	}   
 
+	//Delete a node public ListElement deleteElement(int index)
     public ListElement deleteElement(int index)
     {
     	if (index < 0 || index >= sizeIndex)
@@ -133,7 +130,7 @@ public class LinkedList {
 		return null;
     }
 
-   
+    //Print the linked list from the head public void printLinkedListHead()
     public void printLinkedListHead()
     {
     	ListElement node = head;
@@ -147,6 +144,7 @@ public class LinkedList {
     	System.out.println();
     }
 
+    //Print the linked list from the tail public void printLinkedListTail()
     public void printLinkedListTail()
     {
     	ListElement node = tail;

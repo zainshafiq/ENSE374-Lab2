@@ -42,7 +42,6 @@ public class LinkedList {
 	public void addElement(ListElement le) 
 	{
 		ListElement temp = new ListElement();
-		//le.setData(5);
 		temp.setNext(head);
 		 
 		if(head != null)
@@ -65,7 +64,7 @@ public class LinkedList {
 	{
 		if (index < 0 || index >= sizeIndex)
 		{
-			System.out.println("Something");
+			System.out.println("Error!");
 		}
 		
         else
@@ -87,7 +86,7 @@ public class LinkedList {
     {
     	if (index < 0 || index >= sizeIndex)
     	{	
-    		System.out.println("Something");
+    		System.out.println("Error!");
     	}
     	
         else
@@ -157,7 +156,45 @@ public class LinkedList {
 
     	System.out.println();
     }
+    
+    public static void main(String[] args)
+    {
+    	ListElement le1 = new ListElement(); 
+		ListElement le2 = new ListElement();
+		ListElement le3 = new ListElement();
+		ListElement le4 = new ListElement();
+		ListElement le5 = new ListElement();
+		
+		le1.setData(1); 
+		le2.setData(2);
+		le3.setData(3);
+		le4.setData(4);
+		le5.setData(5);
+    	    	
+		LinkedList ob = new LinkedList();
+    	        
+    	ob.addElement(le1);
+    	ob.addElement(le2);
+    	ob.addElement(le3);
+    	ob.addElement(le4);
+    	ob.addElement(le5);
+
+        System.out.print("\nList Forward : ");
+
+        ob.printLinkedListHead();      
+
+        System.out.print("\nList Backward : ");
+
+        ob.printLinkedListTail();
+
+        ob.deleteElement(3);
+
+        System.out.print("\nDeleted 1: ");
+
+        ob.printLinkedListHead();
+    }
 }
+
 	
 
 	

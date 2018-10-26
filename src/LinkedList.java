@@ -159,21 +159,20 @@ public class LinkedList {
     
     //Main
     public static void main(String[] args)
-    {
+    {	
     	ListElement le1 = new ListElement(); 
-		ListElement le2 = new ListElement();
-		ListElement le3 = new ListElement();
-		ListElement le4 = new ListElement();
-		ListElement le5 = new ListElement();
+    	ListElement le2 = new ListElement();
+    	ListElement le3 = new ListElement();
+    	ListElement le4 = new ListElement();
+    	ListElement le5 = new ListElement();
 		
-		
-		le1.setData(1); 
-		le2.setData(2);
-		le3.setData(3);
-		le4.setData(4);
-		le5.setData(5);
-    	    	
-		LinkedList ob = new LinkedList();
+    	le1.setData(1); 
+    	le2.setData(2);
+    	le3.setData(3);
+    	le4.setData(4);
+    	le5.setData(5);
+    	
+    	LinkedList ob = new LinkedList();
     	        
     	ob.addElement(le1);
     	ob.addElement(le2);

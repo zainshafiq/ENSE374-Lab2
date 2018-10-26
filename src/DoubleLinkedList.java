@@ -5,7 +5,6 @@
  * Now you can switch functionality by switching branches. 
  * 
  * Shafiq Zainuddin - 200342741
- * test pull
  */
 
 

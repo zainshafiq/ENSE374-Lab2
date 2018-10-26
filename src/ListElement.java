@@ -8,15 +8,27 @@
 
 public class ListElement
 {
+	/*
+	 * Declaring private variables
+	 */
+	
      private ListElement next;
      private ListElement previous;
      private int data;
      
      public ListElement( )
      {
-    	 this.data = 0;				//Initialize data to 0
-    	 this.next = null;			//Initialize next to NULL
-    	 this.previous = null;		//Initialize previous to NULL
+    	 /*
+    	  * Initializing variables;
+    	  * 
+    	  * Initialize data to 0
+    	  * Initialize next to NULL
+    	  * Initialize previous to NULL
+    	  */
+    	 
+    	 this.data = 0;				
+    	 this.next = null;			
+    	 this.previous = null;		
      }
      
      /*
@@ -29,7 +41,7 @@ public class ListElement
       * 	None 
       */
      
-    //Giving access via setter for data  
+     //Giving access via setter for data  
      public void setData(int data)
      {
     	 this.data = data;
@@ -50,7 +62,7 @@ public class ListElement
      //Giving access via getter for next
      public ListElement getNext() 
      {
-    	 return next;
+    	 return this.next;
      }     
 
      //Giving access via setter for previous
@@ -62,6 +74,6 @@ public class ListElement
      //Giving access via getter for previous
      public ListElement getPrevious() 
      {
-         return previous;
+         return this.previous;
      }     
 }

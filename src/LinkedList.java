@@ -181,6 +181,8 @@ public class LinkedList {
     	ob.addElement(le4);
     	ob.addElement(le5);
 
+    	System.out.print("Welcome to Linked List: :D \n");
+    	
     	//Test print List
         System.out.print("\nList Forward : ");
 
@@ -194,12 +196,12 @@ public class LinkedList {
         //Test Deleting
         ob.deleteElement(1);
 
-        System.out.print("\nDeleted 1: ");
+        System.out.print("\nIf managed to delete 1: ");
         ob.printLinkedListHead();
         
         ob.deleteElement(3);
 
-        System.out.print("\nDeleted 3: ");
+        System.out.print("\nIf manage to delete 3: ");
         ob.printLinkedListHead();
         
         ob.deleteElement(5);

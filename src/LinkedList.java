@@ -157,6 +157,7 @@ public class LinkedList {
     	System.out.println();
     }
     
+    //Main
     public static void main(String[] args)
     {
     	ListElement le1 = new ListElement(); 
@@ -164,6 +165,7 @@ public class LinkedList {
 		ListElement le3 = new ListElement();
 		ListElement le4 = new ListElement();
 		ListElement le5 = new ListElement();
+		
 		
 		le1.setData(1); 
 		le2.setData(2);
@@ -179,19 +181,31 @@ public class LinkedList {
     	ob.addElement(le4);
     	ob.addElement(le5);
 
+    	//Test print List
         System.out.print("\nList Forward : ");
 
         ob.printLinkedListHead();      
 
+        //Test print List
         System.out.print("\nList Backward : ");
 
         ob.printLinkedListTail();
 
-        ob.deleteElement(3);
+        //Test Deleting
+        ob.deleteElement(1);
 
         System.out.print("\nDeleted 1: ");
-
         ob.printLinkedListHead();
+        
+        ob.deleteElement(3);
+
+        System.out.print("\nDeleted 3: ");
+        ob.printLinkedListHead();
+        
+        ob.deleteElement(5);
+        
+        System.out.print("\nDeleted 5: ");
+        ob.printLinkedListHead();              
     }
 }
 

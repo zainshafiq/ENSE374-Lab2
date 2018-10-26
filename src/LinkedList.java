@@ -64,7 +64,7 @@ public class LinkedList {
 	{
 		if (index < 0 || index >= sizeIndex)
 		{
-			System.out.println("Error!");
+			System.out.println("\nError!");
 		}
 		
         else
@@ -78,7 +78,7 @@ public class LinkedList {
             
             return node;
         }
-		return null;
+		return head;
 	}   
 
 	//Delete a node public ListElement deleteElement(int index)
@@ -86,7 +86,7 @@ public class LinkedList {
     {
     	if (index < 0 || index >= sizeIndex)
     	{	
-    		System.out.println("Error!");
+    		System.out.println("\nError!");
     	}
     	
         else
@@ -126,7 +126,7 @@ public class LinkedList {
             
             return curr;
         }
-		return null;
+		return head;
     }
 
     //Print the linked list from the head public void printLinkedListHead()
@@ -206,7 +206,7 @@ public class LinkedList {
         
         ob.deleteElement(5);
         
-        System.out.print("\nDeleted 5: ");
+        System.out.print("\nIf manage to delete 5: ");
         ob.printLinkedListHead();              
     }
 }

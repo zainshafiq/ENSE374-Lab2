@@ -38,10 +38,12 @@ public class LinkedList {
 		tail = null;
 	}
 	
-	 public void addElement(ListElement le) 
-	 {
+	
+	
+	public void addElement(ListElement le) 
+	{
 		ListElement temp = new ListElement();
-		le.setData(5);
+		//le.setData(5);
 		temp.setNext(head);
 		 
 		if(head != null)

@@ -8,16 +8,15 @@
 
 public class ListElement
 {
-
      private ListElement next;
      private ListElement previous;
      private int data;
      
      public ListElement( )
      {
-     this.data = 0;
-     this.next = null;
-     this.previous = null;
+    	 this.data = 0;				//Initialize data to 0
+    	 this.next = null;			//Initialize next to NULL
+    	 this.previous = null;		//Initialize previous to NULL
      }
      
      /*

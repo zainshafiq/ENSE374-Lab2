@@ -1,3 +1,11 @@
+/*
+ * The following is a class named ListElement. This class demonstrates the 
+ * functionality of a DoublecLinked List. In Phase 1 you will create a single
+ * linked list. Remember to check in and Push to your GitHub repository.
+ * 
+ * Shafiq Zainuddin - 200342741
+ */
+
 public class ListElement
 {
 
@@ -12,33 +20,49 @@ public class ListElement
      this.previous = null;
      }
      
+     /*
+      * Notice the private members. If a user wants to access these members, 
+      * we must give them access via setters and getters.
+      * 
+      * @param data
+      * 	an integer to be stored in the node
+      * @return
+      * 	None 
+      */
+     
+    //Giving access via setter for data  
      public void setData(int data)
      {
     	 this.data = data;
      }
 
+     //Giving access via getter for data
      public int getData()
      {
          return this.data ;
-     }
+     }     
      
-     public ListElement getNext() 
-     {
-    	 return next;
-     }
-     
+     //Giving access via setter for next
      public void setNext(ListElement next) 
      {
     	 this.next = next;
      }
-
-     public ListElement getPrevious() 
+     
+     //Giving access via getter for next
+     public ListElement getNext() 
      {
-         return previous;
+    	 return next;
      }     
 
+     //Giving access via setter for previous
      public void setPrevious(ListElement previous) 
      {
     	 this.previous = previous;
+     }
+     
+     //Giving access via getter for previous
+     public ListElement getPrevious() 
+     {
+         return previous;
      }     
 }

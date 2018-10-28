@@ -180,9 +180,9 @@ public class LinkedList {
     	 * Reference: https://stackoverflow.com/questions/2506077/how-to-read-
     	 * integer-value-from-the-standard-input-in-java
     	 */
-    	
-    	Scanner in = new Scanner(System.in); 
-        System.out.printf("Enter the 1st Digit:  ");
+    	    	 
+        Scanner in = new Scanner(System.in);
+    	System.out.printf("Enter the 1st Digit:  ");
         int a = in.nextInt(); //
         le1.setData(a);
         ob.addElement(le1);
@@ -236,7 +236,7 @@ public class LinkedList {
         int z = in.nextInt();
         ob.deleteElement(z);
         
-        System.out.printf("\nLinked List after deletion: ");
+        System.out.print("\nLinked List after deletion: ");
         ob.printLinkedListHead();     
     	         
     }

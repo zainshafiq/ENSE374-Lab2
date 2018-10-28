@@ -11,8 +11,11 @@ public class DoubleLinkedList{
 	
 	//Declaring variables
 	public ListElement head;
-	public ListElement tail;
-	public int sizeIndex;
+	
+	/* public ListElement tail;
+	 * public int sizeIndex;
+	 */
+	
 	
 	//Default constructor
 	public DoubleLinkedList()
@@ -23,10 +26,12 @@ public class DoubleLinkedList{
    	  	* Initialize sizeIndex to 0
    	  	* Initialize head to NULL
    	  	* Initialize tail to NULL
+   	  	* 
+   	  	* sizeIndex = 0;
+   	  	* tail = null;
    	  	*/
-		sizeIndex = 0;
+		
 		head = null;
-		tail = null;
 	}
 	
 	//Add a node public void addElement(ListElement le)
@@ -42,13 +47,14 @@ public class DoubleLinkedList{
 			
 			head = temp;
 
-			if(tail == null)
-			{
-				tail = temp;
-			}
-			
-	       sizeIndex++;
-	    }
+			/* 	if(tail == null)
+			 * 	{
+			 * 		tail = temp;
+			 * 	}
+			 * 
+			 * 	sizeIndex++;
+			 */		
+		}
 
 		//Retrieve a node public ListElement getElement(int index)
 		public ListElement getElement(int index)

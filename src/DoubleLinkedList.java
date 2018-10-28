@@ -1,3 +1,5 @@
+import java.util.Scanner; //For user input
+
 /*
  * Now refactor your design so that it is a Double Linked List as the class 
  * above indicates. Make a branch in your repository and call it doubleLinkedList.
@@ -80,7 +82,7 @@ public class DoubleLinkedList{
 		//Delete a node public ListElement deleteElement(int index)
 	    public ListElement deleteElement(int index)
 	    {
-	    	if (index < 0 || index >= sizeIndex)
+	    	if (index < 0 || head == null)
 	    	{	
 	    		System.out.println("\nError!");
 	    	}
@@ -97,7 +99,7 @@ public class DoubleLinkedList{
 	                	head.setPrevious(null);
 	                }
 	                
-	                sizeIndex--;
+	                //sizeIndex--;
 	                
 	                return curr;
 	            }
@@ -118,7 +120,7 @@ public class DoubleLinkedList{
 	            	node.getNext().setPrevious(node);
 	            }
 	            
-	            sizeIndex--;
+	            //sizeIndex--;
 	            
 	            return curr;
 	        }
@@ -142,7 +144,7 @@ public class DoubleLinkedList{
 	    //Print the linked list from the tail public void printLinkedListTail()
 	    public void printLinkedListTail()
 	    {
-	    	ListElement node = tail;
+	    	ListElement node = head;
 
 	    	while(node != null)
 	    	{
@@ -158,9 +160,83 @@ public class DoubleLinkedList{
 	    {	
 	    	DoubleLinkedList ob = new DoubleLinkedList();
 	    	
+	    	ListElement le1 = new ListElement(); 
+	    	ListElement le2 = new ListElement();
+	    	ListElement le3 = new ListElement();
+	    	ListElement le4 = new ListElement();
+	    	ListElement le5 = new ListElement();
+			    	
+	    	System.out.print("Welcome to Double Linked List: :D \n");
 	    	
+	    	System.out.print("Please put in 5 numbers in: \n");
 	    	
-	    }
+	    	/* Asking for the user input;
+	    	 * Should be an error if the input is not an integer
+	    	 * 
+	    	 * Reference: https://stackoverflow.com/questions/2506077/how-to-read-
+	    	 * integer-value-from-the-standard-input-in-java
+	    	 */
+	    	      
+	        
+	    	Scanner in = new Scanner(System.in);
+	    	
+	    	System.out.printf("Enter the 1st Digit:  ");
+	        int a = in.nextInt(); //
+	        le1.setData(a);
+	        ob.addElement(le1);
+	    	
+	        System.out.printf("Enter the 2nd Digit:  ");
+	        int b = in.nextInt();
+	        le2.setData(b);
+	        ob.addElement(le1);
+	        
+	        System.out.printf("Enter the 3rd Digit:  ");
+	        int c = in.nextInt();
+	        le3.setData(c);
+	        ob.addElement(le1);
+	        
+	        System.out.printf("Enter the 4th Digit:  ");
+	        int d = in.nextInt();
+	        le4.setData(d);
+	        ob.addElement(le1);
+	        
+	        System.out.printf("Enter the 5th Digit:  ");
+	        int e = in.nextInt();
+	        le5.setData(e);
+	        ob.addElement(le1);
+	        
+	    	//Test print List
+	        System.out.print("\nList Forward : ");
+
+	        ob.printLinkedListHead();      
+
+	        //Test print List
+	        System.out.print("\nList Backward : ");
+
+	        ob.printLinkedListTail();
+
+	        //Test Deleting
+	        System.out.print("\nWhich index would you like to delete : ");
+	        int x = in.nextInt();
+	        ob.deleteElement(x);
+
+	        System.out.print("\nLinked List after deletion: ");
+	        ob.printLinkedListHead();
+	        
+	        System.out.print("\nWhich index would you like to delete : ");
+	        int y = in.nextInt();
+	        ob.deleteElement(y);
+	        
+	        System.out.print("\nLinked List after deletion: ");
+	        ob.printLinkedListHead();
+	        
+	        System.out.print("\nWhich index would you like to delete : ");
+	        int z = in.nextInt();
+	        ob.deleteElement(z);
+	        
+	        System.out.print("\nLinked List after deletion: ");
+	        ob.printLinkedListHead();     
+	    }    
 }
 
 

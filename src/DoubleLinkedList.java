@@ -42,7 +42,7 @@ public class DoubleLinkedList{
 			 
 			if(head != null)
 			{
-				tail.setPrevious(temp);
+				head.setPrevious(temp);
 			}
 			
 			head = temp;
@@ -59,7 +59,7 @@ public class DoubleLinkedList{
 		//Retrieve a node public ListElement getElement(int index)
 		public ListElement getElement(int index)
 		{
-			if (index < 0 || index >= sizeIndex)
+			if (index < 0 || head == null)
 			{
 				System.out.println("\nError!");
 			}
@@ -71,11 +71,10 @@ public class DoubleLinkedList{
 	            for(int i = 1; i < index; i++)
 	            {	
 	            	node = node.getNext();
-	            }
-	            
+	            }	            
 	            return node;
 	        }
-			return head;
+			return null;
 		}   
 
 		//Delete a node public ListElement deleteElement(int index)

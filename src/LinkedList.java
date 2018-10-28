@@ -236,7 +236,7 @@ public class LinkedList {
         int z = in.nextInt();
         ob.deleteElement(z);
         
-        System.out.print("\nLinked List after deletion: ");
+        System.out.printf("\nLinked List after deletion: ");
         ob.printLinkedListHead();     
     	         
     }

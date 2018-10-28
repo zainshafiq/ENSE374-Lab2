@@ -182,7 +182,7 @@ public class LinkedList {
     	 */
     	    	 
         Scanner in = new Scanner(System.in);
-    	System.out.printf("Enter the 1st Digit:  ");
+    	System.out.printf("Enter the 1st Digit: ");
         int a = in.nextInt(); //
         le1.setData(a);
         ob.addElement(le1);

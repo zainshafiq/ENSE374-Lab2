@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Now create an object of this class and access the members: 
  * ListElement le = new ListElement();
@@ -160,53 +162,26 @@ public class LinkedList {
     //Main
     public static void main(String[] args)
     {	
+    	LinkedList ob = new LinkedList();
+    	
     	ListElement le1 = new ListElement(); 
     	ListElement le2 = new ListElement();
     	ListElement le3 = new ListElement();
     	ListElement le4 = new ListElement();
     	ListElement le5 = new ListElement();
-		
-    	le1.setData(1); 
-    	le2.setData(2);
-    	le3.setData(3);
-    	le4.setData(4);
-    	le5.setData(5);
-    	
-    	LinkedList ob = new LinkedList();
-    	        
-    	//ob.addElement(le1);
-    	//ob.addElement(le2);
-    	//ob.addElement(le3);
-    	//ob.addElement(le4);
-    	//ob.addElement(le5);
-
+		    	
     	System.out.print("Welcome to Linked List: :D \n");
     	
-    	//Test print List
-        System.out.print("\nList Forward : ");
-
-        ob.printLinkedListHead();      
-
-        //Test print List
-        System.out.print("\nList Backward : ");
-
-        ob.printLinkedListTail();
-
-        //Test Deleting
-        ob.deleteElement(1);
-
-        System.out.print("\nIf managed to delete 1: ");
-        ob.printLinkedListHead();
-        
-        ob.deleteElement(3);
-
-        System.out.print("\nIf manage to delete 3: ");
-        ob.printLinkedListHead();
-        
-        ob.deleteElement(5);
-        
-        System.out.print("\nIf manage to delete 5: ");
-        ob.printLinkedListHead();              
+    	System.out.print("Please put in 5 numbers in: \n");
+    	
+    	/* Asking for the user input;
+    	 * Should be an error if the input is not an integer
+    	 * 
+    	 * Reference: https://stackoverflow.com/questions/2506077/how-to-read-
+    	 * integer-value-from-the-standard-input-in-java
+    	 */
+    	
+    	         
     }
 }
 

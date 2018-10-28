@@ -181,6 +181,63 @@ public class LinkedList {
     	 * integer-value-from-the-standard-input-in-java
     	 */
     	
+    	Scanner in = new Scanner(System.in); 
+        System.out.printf("Enter the 1st Digit:  ");
+        int a = in.nextInt(); //
+        le1.setData(a);
+        ob.addElement(le1);
+        
+        System.out.printf("Enter the 2nd Digit:  ");
+        int b = in.nextInt();
+        le2.setData(b);
+        ob.addElement(le1);
+        
+        System.out.printf("Enter the 3rd Digit:  ");
+        int c = in.nextInt();
+        le3.setData(c);
+        ob.addElement(le1);
+        
+        System.out.printf("Enter the 4th Digit:  ");
+        int d = in.nextInt();
+        le4.setData(d);
+        ob.addElement(le1);
+        
+        System.out.printf("Enter the 5th Digit:  ");
+        int e = in.nextInt();
+        le5.setData(e);
+        ob.addElement(le1);
+        
+    	//Test print List
+        System.out.print("\nList Forward : ");
+
+        ob.printLinkedListHead();      
+
+        //Test print List
+        System.out.print("\nList Backward : ");
+
+        ob.printLinkedListTail();
+
+        //Test Deleting
+        System.out.print("\nWhich index would you like to delete : ");
+        int x = in.nextInt();
+        ob.deleteElement(x);
+
+        System.out.print("\nLinked List after deletion: ");
+        ob.printLinkedListHead();
+        
+        System.out.print("\nWhich index would you like to delete : ");
+        int y = in.nextInt();
+        ob.deleteElement(y);
+        
+        System.out.print("\nLinked List after deletion: ");
+        ob.printLinkedListHead();
+        
+        System.out.print("\nWhich index would you like to delete : ");
+        int z = in.nextInt();
+        ob.deleteElement(z);
+        
+        System.out.print("\nLinked List after deletion: ");
+        ob.printLinkedListHead();     
     	         
     }
 }

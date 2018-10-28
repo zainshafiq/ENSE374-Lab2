@@ -174,11 +174,11 @@ public class LinkedList {
     	
     	LinkedList ob = new LinkedList();
     	        
-    	ob.addElement(le1);
-    	ob.addElement(le2);
-    	ob.addElement(le3);
-    	ob.addElement(le4);
-    	ob.addElement(le5);
+    	//ob.addElement(le1);
+    	//ob.addElement(le2);
+    	//ob.addElement(le3);
+    	//ob.addElement(le4);
+    	//ob.addElement(le5);
 
     	System.out.print("Welcome to Linked List: :D \n");
     	

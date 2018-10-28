@@ -180,13 +180,15 @@ public class LinkedList {
     	 * Reference: https://stackoverflow.com/questions/2506077/how-to-read-
     	 * integer-value-from-the-standard-input-in-java
     	 */
-    	    	 
-        Scanner in = new Scanner(System.in);
+    	      
+        
+    	Scanner in = new Scanner(System.in);
+    	
     	System.out.printf("Enter the 1st Digit: ");
         int a = in.nextInt(); //
         le1.setData(a);
         ob.addElement(le1);
-        
+    	
         System.out.printf("Enter the 2nd Digit:  ");
         int b = in.nextInt();
         le2.setData(b);

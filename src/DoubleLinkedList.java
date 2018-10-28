@@ -7,6 +7,11 @@
  * Shafiq Zainuddin - 200342741
  */
 
+public class doubleLinkedList{
+	
+	
+}
+
 
 
 
